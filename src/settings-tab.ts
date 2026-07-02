@@ -14,7 +14,7 @@ export class PluginHelperSettingTab extends PluginSettingTab {
 		const { containerEl } = this;
 		containerEl.empty();
 
-		containerEl.createEl("h2", { text: "插件说明书 设置" });
+		new Setting(containerEl).setName("插件说明书").setHeading();
 
 		new Setting(containerEl)
 			.setName("打开插件一览（侧边栏）")

@@ -64,10 +64,6 @@ export default class PluginHelperPlugin extends Plugin {
 		});
 	}
 
-	onunload(): void {
-		this.app.workspace.detachLeavesOfType(VIEW_TYPE_PLUGIN_CATALOG);
-	}
-
 	async loadSettings(): Promise<void> {
 		this.settings = Object.assign(
 			{},
@@ -99,7 +95,7 @@ export default class PluginHelperPlugin extends Plugin {
 				active: true,
 			});
 		}
-		workspace.revealLeaf(leaf);
+		await workspace.revealLeaf(leaf);
 	}
 
 	private async maybeInitialSync(): Promise<void> {

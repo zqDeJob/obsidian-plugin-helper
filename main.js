@@ -567,7 +567,7 @@ var PluginHelperSettingTab = class extends import_obsidian3.PluginSettingTab {
   display() {
     const { containerEl } = this;
     containerEl.empty();
-    containerEl.createEl("h2", { text: "\u63D2\u4EF6\u8BF4\u660E\u4E66 \u8BBE\u7F6E" });
+    new import_obsidian3.Setting(containerEl).setName("\u63D2\u4EF6\u8BF4\u660E\u4E66").setHeading();
     new import_obsidian3.Setting(containerEl).setName("\u6253\u5F00\u63D2\u4EF6\u4E00\u89C8\uFF08\u4FA7\u8FB9\u680F\uFF09").setDesc("\u5728\u5DE6\u4FA7\u680F\u6253\u5F00\u5E38\u9A7B\u9762\u677F\uFF0C\u9002\u5408\u7ECF\u5E38\u67E5\u9605").addButton(
       (btn) => btn.setButtonText("\u6253\u5F00\u4FA7\u8FB9\u680F").onClick(() => {
         void this.plugin.activateCatalogView();
@@ -646,9 +646,6 @@ var PluginHelperPlugin = class extends import_obsidian4.Plugin {
       void this.maybeInitialSync();
     });
   }
-  onunload() {
-    this.app.workspace.detachLeavesOfType(VIEW_TYPE_PLUGIN_CATALOG);
-  }
   async loadSettings() {
     this.settings = Object.assign(
       {},
@@ -676,7 +673,7 @@ var PluginHelperPlugin = class extends import_obsidian4.Plugin {
         active: true
       });
     }
-    workspace.revealLeaf(leaf);
+    await workspace.revealLeaf(leaf);
   }
   async maybeInitialSync() {
     const hasAny = Object.values(this.settings.entries).some(

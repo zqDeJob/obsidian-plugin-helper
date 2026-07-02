@@ -1,8 +1,8 @@
 {
 	"id": "plugin-helper",
-	"name": "Plugin Helper",
-	"version": "1.0.1",
-	"minAppVersion": "1.5.0",
+	"name": "Community Helper",
+	"version": "1.0.2",
+	"minAppVersion": "1.7.2",
 	"description": "Browse installed community plugins with official descriptions, Chinese annotations, and editable personal notes in the sidebar.",
 	"author": "zqDeJob",
 	"authorUrl": "https://github.com/zqDeJob",

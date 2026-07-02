@@ -15,14 +15,14 @@
 ### 从社区插件市场（审核通过后）
 
 1. 打开 **设置 → 社区插件 → 浏览**
-2. 搜索 **Plugin Helper**（社区显示名；插件内界面为中文）
+2. 搜索 **Community Helper**（社区显示名；插件内界面为中文）
 3. 安装并启用
 
 ### 手动安装
 
 1. 从 [Releases](https://github.com/zqDeJob/obsidian-plugin-helper/releases) 下载 `main.js`、`manifest.json`、`styles.css`
 2. 复制到 `你的库/.obsidian/plugins/plugin-helper/`
-3. 在 **设置 → 社区插件** 中启用 **Plugin Helper**
+3. 在 **设置 → 社区插件** 中启用 **Community Helper**
 
 ## 使用
 

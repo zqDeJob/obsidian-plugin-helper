@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  attestations: write
+  id-token: write
 
 jobs:
   release:
@@ -25,6 +27,12 @@ jobs:
       - name: Verify plugin assets
         run: test -f main.js && test -f manifest.json && test -f styles.css
 
+      - uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: |
+            main.js
+            styles.css
+
       - uses: softprops/action-gh-release@v2
         with:
           files: |
@@ -33,4 +41,4 @@ jobs:
             styles.css
           generate_release_notes: false
           body: |
-            见仓库 Release 说明。插件内界面为中文。
+            见仓库 README。插件内界面为中文。
