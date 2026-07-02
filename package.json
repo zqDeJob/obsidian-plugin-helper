@@ -1,6 +1,6 @@
 {
 	"name": "plugin-helper",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Obsidian 第三方插件中文说明书",
 	"main": "main.js",
 	"scripts": {
