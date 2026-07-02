@@ -1,0 +1,10 @@
+{
+	"id": "plugin-helper",
+	"name": "插件说明书",
+	"version": "1.0.0",
+	"minAppVersion": "1.5.0",
+	"description": "浏览已安装社区插件的官方说明与中文注释，并可在侧边栏编辑个人说明。",
+	"author": "zqDeJob",
+	"authorUrl": "https://github.com/zqDeJob",
+	"isDesktopOnly": false
+}

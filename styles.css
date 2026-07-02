@@ -1,0 +1,233 @@
+/* Plugin Helper — 插件说明书 */
+
+.plugin-helper-catalog {
+	padding: 0.75rem;
+	height: 100%;
+	overflow-y: auto;
+}
+
+.plugin-helper-header {
+	margin-bottom: 0.75rem;
+}
+
+.plugin-helper-title-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.plugin-helper-title-row h4 {
+	margin: 0;
+	font-size: var(--font-ui-medium);
+}
+
+.plugin-helper-actions {
+	display: flex;
+	gap: 0.25rem;
+}
+
+.plugin-helper-search-wrap {
+	margin-bottom: 0.35rem;
+}
+
+.plugin-helper-search {
+	width: 100%;
+	padding: 0.35rem 0.5rem;
+	border-radius: var(--input-radius);
+	border: 1px solid var(--background-modifier-border);
+	background: var(--background-primary);
+	color: var(--text-normal);
+}
+
+.plugin-helper-status {
+	font-size: var(--font-ui-smaller);
+	color: var(--text-muted);
+	min-height: 1.2em;
+}
+
+.plugin-helper-list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.65rem;
+}
+
+.plugin-helper-empty {
+	color: var(--text-muted);
+	text-align: center;
+	padding: 2rem 1rem;
+}
+
+.plugin-helper-card {
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-m);
+	padding: 0.65rem 0.75rem;
+	background: var(--background-secondary);
+}
+
+.plugin-helper-card-top {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 0.5rem;
+	margin-bottom: 0.35rem;
+}
+
+.plugin-helper-card-top-left {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+	flex: 1;
+	min-width: 0;
+}
+
+.plugin-helper-settings-corner {
+	flex-shrink: 0;
+	font-size: var(--font-ui-smaller);
+	padding: 0.15rem 0.5rem;
+	border-radius: var(--input-radius);
+	border: 1px solid var(--background-modifier-border);
+	background: var(--background-primary);
+	color: var(--text-muted);
+	cursor: pointer;
+}
+
+.plugin-helper-settings-corner:hover {
+	color: var(--text-normal);
+	border-color: var(--interactive-accent);
+}
+
+.plugin-helper-card-modal .plugin-helper-card-btns:empty {
+	display: none;
+}
+
+.plugin-helper-official-original {
+	color: var(--text-muted);
+}
+
+.plugin-helper-official-annotation {
+	color: var(--text-normal);
+	margin-left: 0.15rem;
+}
+
+.plugin-helper-card-name {
+	font-weight: 600;
+	font-size: var(--font-ui-medium);
+	color: var(--text-normal);
+}
+
+.plugin-helper-badge {
+	font-size: var(--font-ui-smaller);
+	padding: 0.1rem 0.4rem;
+	border-radius: var(--radius-s);
+	flex-shrink: 0;
+}
+
+.plugin-helper-badge-on {
+	background: rgba(var(--color-green-rgb), 0.15);
+	color: var(--color-green);
+}
+
+.plugin-helper-badge-off {
+	background: var(--background-modifier-border);
+	color: var(--text-muted);
+}
+
+.plugin-helper-panel-hint {
+	font-size: var(--font-ui-smaller);
+	color: var(--text-muted);
+	margin-bottom: 0.5rem;
+	line-height: 1.4;
+}
+
+.plugin-helper-desc-block {
+	margin-bottom: 0.5rem;
+}
+
+.plugin-helper-desc-label {
+	font-size: var(--font-ui-smaller);
+	font-weight: 600;
+	color: var(--text-muted);
+	margin-bottom: 0.2rem;
+	text-transform: none;
+}
+
+.plugin-helper-desc-hint {
+	font-size: var(--font-ui-smaller);
+	color: var(--text-faint);
+	margin-bottom: 0.25rem;
+	line-height: 1.35;
+}
+
+.plugin-helper-desc-official {
+	font-size: var(--font-ui-small);
+	line-height: 1.45;
+	color: var(--text-muted);
+	padding: 0.4rem 0.5rem;
+	border-radius: var(--input-radius);
+	background: var(--background-primary);
+	border: 1px dashed var(--background-modifier-border);
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.plugin-helper-card-meta {
+	font-size: var(--font-ui-smaller);
+	color: var(--text-faint);
+	margin-bottom: 0.5rem;
+}
+
+.plugin-helper-textarea {
+	width: 100%;
+	padding: 0.35rem 0.5rem;
+	border-radius: var(--input-radius);
+	border: 1px solid var(--background-modifier-border);
+	background: var(--background-primary);
+	color: var(--text-normal);
+	font-size: var(--font-ui-smaller);
+	min-height: 3.5rem;
+	resize: vertical;
+}
+
+.plugin-helper-card-btns {
+	display: flex;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+}
+
+.plugin-helper-card-btns button {
+	font-size: var(--font-ui-smaller);
+}
+
+/* Modal */
+.plugin-helper-modal {
+	width: min(720px, 92vw);
+	max-height: 85vh;
+}
+
+.plugin-helper-modal-content {
+	max-height: 75vh;
+	overflow-y: auto;
+}
+
+.plugin-helper-modal-hint {
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+	margin-top: -0.25rem;
+	margin-bottom: 0.75rem;
+}
+
+.plugin-helper-modal-toolbar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem;
+	margin-bottom: 0.75rem;
+}
+
+.plugin-helper-modal-toolbar .plugin-helper-search {
+	flex: 1;
+	min-width: 160px;
+}
